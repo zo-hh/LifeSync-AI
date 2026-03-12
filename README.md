@@ -1,101 +1,174 @@
-# 🌟 LifeSync AI
+# LifeSync AI
+### An AI-Powered Planning Companion for Students
 
-**LifeSync AI** is a smart personal organizer designed to help students and professionals balance their academic requirements with personal life goals. By integrating with Google services and utilizing AI-driven prioritization, LifeSync AI ensures you never miss a deadline while also making time for your health and personal growth.
-
----
-
-## 🚀 The Vision
-
-Modern life is a juggle between formal commitments (classes, assignments) and personal wellbeing (goals, rest, habits). LifeSync AI acts as the "connective tissue" between these two worlds, merging them into a single, intelligent schedule.
+**Author:** Zuhrat Ul Wardh
 
 ---
 
-## 🛠️ Core Features
+## Overview
 
-### 📅 Smart Calendar (The Hub)
-- **Unified View**: Merges Google Classroom assignments, Google Calendar events, and personal goals into one interactive interface.
-- **Visual Clarity**: Color-coded events distinguish between academic tasks and personal time.
+LifeSync AI is an experimental project that explores how AI can help college students organize their academic and personal lives in a more intelligent and adaptive way.
 
-### 🎓 Google Integration
-- **Classroom Sync**: Automatically fetches assignments, due dates, and course info.
-- **Calendar Sync**: Keeps your existing schedule in sync with your new LifeSync tasks.
-- **Secure OAuth**: Full integration with Google Cloud Identity for secure access.
+Students constantly juggle coursework, assignments, internships, clubs, fests, personal goals, friendships, and relationships. These responsibilities are usually scattered across multiple platforms such as Google Classroom, emails, calendars, and personal notes.
 
-### 🧠 AI-Driven Scheduling
-- **Intelligent Prioritization**: Uses AI to analyze due dates and task complexity to suggest the best time to work.
-- **Conflict Resolution**: Identifies overlaps between study time and personal goals.
+While many tools exist to track tasks, they rarely help students answer the most important question:
 
-### 🎯 Personal Goals & Wellbeing
-- **Custom Goals**: Add personal projects, hobbies, or habits (e.g., "Read 20 mins," "Go to the Gym").
-- **Daily Check-Ins**: A dedicated flow for tracking mood and health, ensuring your schedule respects your mental state.
+**What should I actually work on today?**
+
+LifeSync AI aims to create a unified system that not only tracks responsibilities but also helps students break down tasks, structure their workload, and dynamically plan their schedules.
 
 ---
 
-## 💻 Tech Stack
+## A Note on Development
 
-- **Frontend**: 
-    - **React** (with Vite) for a fast, responsive UI.
-    - **Vanilla CSS** for premium, custom-tailored aesthetics.
-- **Backend**: 
-    - **FastAPI** (Python) for high-performance API endpoints.
-    - **SQLite** for reliable, lightweight data persistence.
-    - **SQLAlchemy** for ORM-based database management.
-- **APIs & Integrations**: 
-    - **Google Cloud Console**: Classroom API, Calendar API.
-    - **OAuth 2.0**: For secure Google authentication.
+This project was built as an **AI-assisted prototype**.
 
----
+The entire application was created using **Antigravity** together with **Google Gemini**.
 
-## ✅ What We've Accomplished
+Importantly:
 
-1.  **Project Foundation**: Established a robust monorepo structure with a clear separation between the FastAPI backend and React frontend.
-2.  **Authentication System**: Implemented Google OAuth 2.0, allowing users to safely connect their Google accounts.
-3.  **Data Synchronization**: Built services to fetch and store assignments from Google Classroom.
-4.  **Smart Calendar UI**: Developed a comprehensive calendar view that pulls data from multiple sources.
-5.  **Personal Goal Tracking**: Created modules to manage non-academic goals alongside school work.
-6.  **AI Integration Layer**: Set up schemas and endpoints for AI-powered task management.
+- **No manual coding was written by me for this project.**
+- The full prototype was generated through **prompt-driven development using Antigravity.**
+
+This project therefore serves as an experiment in **AI-native software creation**, exploring how modern AI tools can be used to design and prototype functional products without traditional programming.
 
 ---
 
-## 🛠️ Getting Started
+## Motivation
 
-### Prerequisites
-- Python 3.9+
-- Node.js & npm
-- Google Cloud Project credentials
+This project addresses a deeply personal problem.
 
-### Backend Setup
-1. Navigate to `/backend`.
-2. Create a virtual environment: `python -m venv venv`.
-3. Activate it: `source venv/bin/activate` (or `venv\Scripts\activate` on Windows).
-4. Install dependencies: `pip install -r requirements.txt`. (Note: Ensure requirements.txt is up to date).
-5. Configure `.env` with your Google Client ID and Secret.
-6. Run the server: `python -m app.main`.
+As a college student, it often feels impossible to balance academics, internships, clubs, fests, and extracurricular commitments while also maintaining a social life. Even with tools like calendars and task managers, it is still difficult to decide how to structure work across time.
 
-### Frontend Setup
-1. Navigate to `/frontend`.
-2. Install dependencies: `npm install`.
-3. Start the dev server: `npm run dev`.
+Initially, LifeSync AI started as a simple assignment tracker. However, tools like Google Calendar already perform that function. The real challenge is not tracking deadlines but **managing the overwhelming nature of large tasks and competing priorities.**
+
+Through conversations with friends, I realized that many students face the same issue: large assignments feel intimidating and most productivity tools do not help break them down into manageable steps.
+
+This insight shaped the direction of LifeSync AI.
 
 ---
 
-## 📂 Project Structure
+## Core Idea
 
-```text
-LifeSync-AI/
-├── backend/            # FastAPI Application
-│   ├── app/
-│   │   ├── api/        # API Endpoints (auth, tasks, goals, ai)
-│   │   ├── core/       # Configuration
-│   │   ├── db/         # Database models & session
-│   │   └── services/   # Business logic (Google API calls)
-├── frontend/           # React + Vite Application
-│   ├── src/
-│   │   ├── components/ # Reusable UI components
-│   │   └── pages/      # SmartCalendar, Dashboard, Goals, etc.
-└── README.md           # You are here!
-```
+LifeSync AI acts as a **planning companion** rather than just a task tracker.
+
+Instead of simply listing deadlines, the system attempts to:
+
+- Break large assignments into smaller subtasks  
+- Distribute work across available days  
+- Integrate personal goals into the schedule  
+- Provide a bird’s-eye view of upcoming responsibilities  
+
+The goal is to transform what feels like an overwhelming workload into a **structured and manageable plan.**
 
 ---
 
-*LifeSync AI - Merging your academic and personal worlds with intelligence.*
+## Features
+
+### Assignment Tracking
+LifeSync AI integrates with **Google Classroom** to retrieve assignment deadlines and academic tasks.
+
+### AI Task Breakdown
+Large assignments are automatically broken down into smaller actionable subtasks.
+
+Example:
+
+**Research Paper (Due in 8 days)**
+
+Subtasks generated:
+- Topic research  
+- Create outline  
+- Write first draft  
+- Edit and revise  
+- Final submission  
+
+These tasks are distributed across the available time before the deadline.
+
+### Smart Calendar
+LifeSync AI introduces a **Smart Calendar** that provides a structured view of upcoming work.
+
+Unlike traditional calendars that only display events, the Smart Calendar organizes tasks in a way that helps students understand how their workload is distributed across time.
+
+### Personal Goals Integration
+Academics are only one part of a student’s life.
+
+LifeSync AI allows users to add personal goals such as:
+
+- Exercising  
+- Reading  
+- Learning a new skill  
+
+These goals are also incorporated into the overall planning system.
+
+### Emotional Check-ins
+Students can complete daily check-ins to indicate how they feel.
+
+Possible states include:
+
+- Energized  
+- Neutral  
+- Tired  
+- Overwhelmed  
+
+This input can help the system adjust scheduling decisions and move tasks around depending on the user's mental state.
+
+---
+
+## Current Status
+
+LifeSync AI is currently an **early-stage prototype**.
+
+The application currently runs **only on a local development environment (localhost)** and has not been deployed online.
+
+Because of this, the repository primarily demonstrates the concept through documentation and screenshots.
+
+---
+
+## Screenshots
+
+Below are screenshots of the current prototype interface.
+
+*(Add your screenshots here)*
+
+Example sections you may include:
+
+- Dashboard  
+- Smart Calendar  
+- Assignment Tracker  
+- Personal Goals  
+- Emotional Check-in  
+
+---
+
+## Feedback and Early Insights
+
+While discussing this idea with friends, one insight became clear: even a fully scheduled calendar can feel overwhelming.
+
+Students often need **flexibility and breathing room** in their schedules, rather than a system that rigidly fills every available slot.
+
+Future iterations of LifeSync AI will explore how to introduce **more adaptive scheduling and whitespace** in planning so that the system feels supportive rather than restrictive.
+
+---
+
+## Future Development
+
+LifeSync AI is still in its earliest stage, and many improvements are possible.
+
+Potential future directions include:
+
+- Integration with additional academic platforms  
+- More advanced AI task planning models  
+- Personalization based on user productivity patterns  
+- Adaptive scheduling based on energy levels and preferences  
+
+---
+
+## Vision
+
+The central idea behind LifeSync AI is simple:
+
+Students do not simply need better tools to record tasks.
+
+They need intelligent systems that help them decide **what to do next**.
+
+LifeSync AI explores how AI-driven planning tools could support students in navigating complex academic and personal workloads.
