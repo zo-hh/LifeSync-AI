@@ -170,7 +170,7 @@ Potential future directions include:
 
 - Integration with additional academic platforms  
 - More advanced AI task planning models  
-- Personalization based on user productivity patterns  
+- Personalization based on the producitvity patterns and needs of the user
 - Adaptive scheduling based on energy levels and preferences  
 
 ---
