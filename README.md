@@ -126,19 +126,31 @@ Because of this, the repository primarily demonstrates the concept through docum
 
 ## Screenshots
 
-Below are screenshots of the current prototype interface.
+Below are screenshots of the current interface:
 
-*(Add your screenshots here)*
+#### Dasboard
+Contains achievements of the student as well as upcoming tasks.
+<img width="1910" height="800" alt="Screenshot 2026-03-12 140029" src="https://github.com/user-attachments/assets/ea64d32b-b1aa-4e2a-8ba0-8163b2e21046" />
 
-Example sections you may include:
+### Smart Calender
+This gives the bird's eye view of all the tasks and where to do which task.
+<img width="1915" height="844" alt="Screenshot 2026-03-12 143509" src="https://github.com/user-attachments/assets/8d9c0690-abcc-43ef-afcc-5f76393370b6" />
 
-- Dashboard  
-- Smart Calendar  
-- Assignment Tracker  
-- Personal Goals  
-- Emotional Check-in  
+### Assignment Planner
+Fetches the assignments from Google classroom and divides them into subtasks.
+<img width="1914" height="816" alt="Screenshot 2026-03-12 140041" src="https://github.com/user-attachments/assets/201d56f4-4f2a-4c83-a0b9-dbc264f09230" />
+<img width="1919" height="818" alt="Screenshot 2026-03-12 140052" src="https://github.com/user-attachments/assets/27111ffb-c448-4c2f-bc1f-1a280e46cf88" />
 
----
+### Personal Goals
+Students can add their personal goals. In the future, would like to add some features to some goals such as how often one wants to do it in a week, etc.
+<img width="1915" height="808" alt="Screenshot 2026-03-12 140105" src="https://github.com/user-attachments/assets/cba76fae-c8ae-494f-8599-365157050e4f" />
+
+### Check-in
+This is a very important feature wherein we use how the student is feeling to determine if the calender should change accordingly.
+<img width="1919" heighht="807" alt="Screenshot 2026-03-12 140110" src="https://github.com/user-attachments/assets/b22f488a-13f9-4416-ad22-36deebeef92e" />
+<img width="1893" height="845" alt="Screenshot 2026-03-12 141013" src="https://github.com/user-attachments/assets/054263f0-8301-4e9a-a5b9-a5983ac17c78" />
+<img width="1918" height="836" alt="Screenshot 2026-03-12 141021" src="https://github.com/user-attachments/assets/28b2301f-2889-4da6-a1cc-fb88e1e7b37e" />
+
 
 ## Feedback and Early Insights
 
